@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Class Contaier */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-left: 90px;
+    padding-right: 90px;
+    background-color: #f3f4f6;
+}
+
+.meet-friend-content-background{
+    background-color: #ffffff;
+}
+
+.grids{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 100px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.grids-2{
+    gap: 0;
+    margin-bottom: 100px;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-container-2 {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.grid-content{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.grid-content-2{
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.grid-content-3{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.meet-my-friends-grids{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.meet-my-friends-title-grid{
+    grid-column: span 8;
+    grid-row: span 1;
+}
+
+.friend-picture-grid{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.friend-content-grid{
+    grid-column: span 3;
+    grid-row: span 1;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.register{
+    background-color: #f3f4f6;
+    padding: 30px;
+    max-width: 550px;
+    margin: auto; 
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+.no-margin{
+    margin: 0;
+    margin-top: 20px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    background-color: #ffffff;
+    padding-bottom: 30px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    align-items: left;
+}
+
+.side-bar {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 400px;
+    height: 1000px;
+    padding: 70px;
+}
+
+.lessons-container{
+    position: flex;
+    margin-left: 250px;
+    align-items: top;
+    justify-content: left;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+/* Class Gambar */
+.logo {
+    display: flex;
+    width: 192px;
+    height: 36px;
+}
+
+.content-image{
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    height: auto;
+}
+
+.friend-picture{
+    border-radius: 100px;
+    margin-right: 50px;
+}
+
+.lesson-instructure{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    margin-right: 100px;
+}
+
+/* Class Teks */
+
+.right-content{
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.left-content{
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+.right-spacing{
+    margin-right: 50px;
+}
+
+.left-spacing{
+    margin-left: 100px;
+}
+
+.main-title {
+    font-size: 60px;
+    padding: 50px;
+    color: #38404f;
+    text-align: center;
+}
+
+.title-highlight {
+    color: #de3f1c;
+}
+
+.black-font{
+    color: #000000;
+}
+
+.dark-blue-font{
+    color: #091836;
+}
+
+.secondary-title {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.bold-content{
+    font-weight: 200;
+    font-size: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+.meet-my-friends-title{
+    font-size: 50px;
+}
+
+.left-text-align {
+    text-align: left;
+    padding-right: 45px;
+}
+
+.register-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.side-bar-menu{
+    line-height: 2;
+}
+
+.lesson-title{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.lesson-content{
+    line-height: 1.7;
+}
+
+.instructure-name{
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+/* Tags */
+
+p, a {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #949eb2;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+form input[type="email"] {
+    flex: 6;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px 20px;
+    background-color: #65d777;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Other Class */
+.read-lesson-button{
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .bold-content, .main-title {
+        font-size: 18px;
+        padding: 15px 10px;
+    }
+}
