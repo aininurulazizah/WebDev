@@ -65,7 +65,7 @@
 .meet-my-friends-grids{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
 .meet-my-friends-title-grid{
@@ -266,11 +266,19 @@ form{
 }
 
 form input[type="email"] {
+    font-size: 16px;
     flex: 6;
-    width: 100%;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.form-top{
+    width: 500px;
+}
+
+.form-bottom{
+    width: 400px;
 }
 
 button {
