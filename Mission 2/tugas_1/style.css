@@ -1,0 +1,129 @@
+ body {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 100px;
+    display: flex;
+    font-family: Arial, sans-serif;
+  }
+  
+  .product-container {
+    width: 65%;
+    background-color: #323b3e;
+    padding: 20px;
+    color: #fff;
+    align-items: center;
+  }
+  
+  .cart-container {
+    width: 35%;
+    background-color: #27282b;
+    padding: 20px;
+    color: #fff;
+    font-size: 15px;
+    
+  }
+  
+  .grid-container-product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .grid-container-cart {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+
+  .cart-card-1 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .cart-card-2 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  
+  .cart-card-3 {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .cart-card{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 5px;
+  }
+  
+  .content-image {
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    padding-top: 20px;
+  }
+
+  .cart-image {
+    width: 75px;
+    height: 75px;
+    padding-top: 5px;
+  }
+
+  .product-name-label{
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  .cart-total {
+    position: fixed;
+    bottom: 0;
+    width: 33%;
+    font-size: 15px;
+    background-color: #27282b;
+  }
+
+  button {
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+  }
+
+  button:hover {
+    background-color: #ffffff;
+    color: #27282b;
+  }
+
+  button:active {
+    background-color: #27282b;
+    color: #ffffff;
+  }
+
+  .add-to-cart-button{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  input {
+    background-color: #27282b;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .product-container {
+    width: 100%;
+  }
+  .cart-container {
+    width: 100%;
+  }
+}
