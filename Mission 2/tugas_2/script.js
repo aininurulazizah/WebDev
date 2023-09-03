@@ -1,7 +1,7 @@
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 const roketImage = new Image();
-roketImage.src = 'img/roket.png'; // Ganti 'nama_file_gambar.png' dengan nama file gambar Anda
+roketImage.src = 'img/roket.png'; 
 const ufoImage = new Image();
 ufoImage.src = 'img/ufo.png';
 
@@ -118,7 +118,6 @@ function checkCollision() {
 
         if (deltaX < (roket.width + obstacle.width) / 2 && deltaY < (roket.height + obstacle.height) / 2) {
             // Terjadi tabrakan antara roket dan obstacle UFO
-            // Tindakan setelah terjadi tabrakan, misalnya, mengakhiri permainan
             gameOver();
         }
     }
