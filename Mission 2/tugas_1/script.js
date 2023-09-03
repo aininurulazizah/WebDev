@@ -120,7 +120,23 @@ addToCartButtons.forEach(button => {
         <p>Rp. ${total_bayar}</p>
       </div>
       </div>
+      <button class="checkout-button" id="checkout">Check Out</button>
       `;
+
+      const checkoutClicked = document.getElementById("checkout");
+      const cartContent = cartContainer.querySelectorAll(".cart-item");
+      const cartTotals = cartContainer.querySelectorAll(".cart-details");
+      let itemText = '';
+
+      checkoutClicked.addEventListener('click',function(){
+        cartContent.forEach(item => {
+          itemText += item.textContent.trim() + '\n';
+        })
+//        cartTotals.forEach(item => {
+//          itemText += item.textContent.trim() + '\n';
+//        })
+        alert("Berhasil Checkout! Berikut List Belanjaan Anda : \n\n" + itemText);
+      })
     }
   });
 });

@@ -107,7 +107,7 @@
     color: #ffffff;
   }
 
-  .add-to-cart-button{
+  .add-to-cart-button , .checkout-button{
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;

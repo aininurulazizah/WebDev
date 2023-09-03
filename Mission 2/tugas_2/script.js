@@ -68,15 +68,24 @@ function updateGameArea() {
         obstacle.x -= roket.speed;
     }
 
+    // let step_count = 0;
+    // if (step_count % 10 == 0){
+        
+    // }
     drawObstacles();
 
     checkCollision();
 
     scoreGap++ ;
 
-    score = Math.round(scoreGap / 10);
+    score = Math.round(scoreGap / 50);
 
-    if (Math.random() < 0.02) {
+    const scoreLabel = document.querySelector(".score-label");
+    scoreLabel.innerHTML = `
+    Score : ${score}
+    `;
+
+    if (Math.random() < 0.01) {
         const obstacle = {
             x: canvas.width,
             y: Math.random() * canvas.height,
@@ -116,6 +125,5 @@ function checkCollision() {
 }
 
 function gameOver() {
-    alert("Game Over! Score : " + score);
-    return;
+    alert("Game Over! Score : " + score + "\n\nKlik restart/f5 lalu enter untuk mengulang");
 }
