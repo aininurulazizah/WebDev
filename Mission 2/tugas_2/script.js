@@ -88,7 +88,7 @@ function updateGameArea() {
     if (Math.random() < 0.01) {
         const obstacle = {
             x: canvas.width,
-            y: Math.random() * canvas.height,
+            y: Math.random() * 400,
             width: 120,
             height: 80,
         };
